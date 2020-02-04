@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-wrapper" id="wrapper">
+      <!-- <button id="check">check</button> -->
+      <div class="parent__container" id="parent">
+        <h1>Create your own matrix</h1>
+        <p class="input-line">
+          M<input type="number" id="m" class="input-field" />
+        </p>
+        <p class="input-line">
+          N<input type="number" id="n" class="input-field" />
+        </p>
+        <p class="input-line">
+          X<input type="number" id="x" class="input-field" />
+        </p>
+        <button class="btn1" id="btn1">Create</button>
+      </div>
+      <button class="btn1" id="matrixBtn">Start again</button>
+      <div class="buttons" id="buttons">
+        <h1>Строка</h1>
+        <h2>Удалить/Добавить</h2>
+
+        <div class="buttons_wrapper">
+          <button class="btn2" id="btn2">-</button>
+          <button class="btn3" id="btn3">+</button>
+        </div>
+      </div>
+
+      <div class="matrix-wrapper">
+        <div class="matrix" id="matrix">
+          <div class="matrixPointHidden" id="matrixPointHidden"></div>
+        </div>
+
+        <div class="total-m-wrapper" id="total-m-wrapper">
+          <div class="total">Total:</div>
+          <div class="matrixWrapperHidden2" id="matrixWapperHidden2"></div>
+        </div>
+        <div class="average-wrapper" id="average-wrapper">
+          <div class="average">Average:</div>
+          <div class="matrixWrapperHidden3" id="matrixWapperHidden3"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

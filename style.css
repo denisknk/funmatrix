@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: rgb(233, 127, 127); */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.parent__container {
+  width: 380px;
+  height: 230px;
+  background-color: #ebebeb;
+  /* margin: 0, auto; */
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 0 10px 0.5; */
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.matrix {
+  width: 300px;
+  /* height: 200px; */
+  background-color: rgb(197, 159, 159);
+  /* position: absolute;
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;  */
+  margin-top: 100px;
+  display: none;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.matrixPoint {
+  /* color: rgb(179, 107, 13); */
+  background-color: rgb(62, 243, 228);
+  border: 1px solid gray;
+  width: 40px;
+  height: 40px;
+  transition: 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: content-box;
+
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+/* .matrixPointHovered {
+    background-color:  rgb(231, 229, 123);
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    transition: 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+} */
+
+.similarPoints {
+  background-color: rgb(231, 229, 123);
+  transition: 0.25s;
+}
+
+.matrixPoint:hover {
+  background-color: rgb(231, 229, 123);
+  color: rgb(59, 59, 59);
+}
+
+.matrix-wrapper {
+  display: flex;
+  position: relative;
+  margin-top: 130px;
+}
+
+.total-m-wrapper {
+  display: none;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 20px;
+  background-color: rgb(221, 251, 247);
+  position: relative;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.total {
+  position: absolute;
+  top: -40px;
+  font-size: 1.2em;
+  color: #444444;
+  font-weight: 700;
+}
+
+.red {
+  background-color: rgb(235, 128, 128);
+  color: black;
+  transition: 0.28s;
+}
+
+.average {
+  /* position: absolute; */
+  /* top: -40px; */
+  font-size: 1.2em;
+  color: #444444;
+  font-weight: 700;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.average-wrapper {
+  display: none;
+  /* display: flex; */
+  height: 40px;
+  position: absolute;
+  bottom: -65px;
+  left: -100px;
+}
+
+.average-wrapper .matrixWrapperHidden {
+  width: 40px;
+  border: 1px solid gray;
+  background-color: rgb(221, 251, 247);
+}
+
+.matrixWrapperHidden {
+  height: 40px;
+  /* background-color: rgb(221, 251, 247); */
+  font-weight: 700;
+  font-size: 1.15em;
+  color: rgb(22, 49, 49);
+  /* border: 1px solid gray; */
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  padding: 0 10px;
+}
+
+.input-field {
+  width: 80%;
+  margin: 10px;
+  font-size: 15px;
+  color: #404040;
+  outline: none;
+  border-radius: 1px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  appearance: none;
+  min-height: 22px;
+  padding-left: 8px;
+}
+
+.input-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* padding-left: 10px; */
+}
+
+h1 {
+  color: #5a5a5a;
+}
+
+.btn1 {
+  width: 50%;
+  height: 1.5em;
+  border-radius: 3px;
+  transition: 0.2s;
+  border: none;
+  background-color: rgb(197, 197, 197);
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.buttons {
+  position: absolute;
+  top: 75px;
+  color: gray;
+  display: none;
+}
+
+.buttons h1 {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+.buttons_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn2 {
+  /* position: absolute; */
+  z-index: 1001;
+  margin-top: 10px;
+  width: 20px;
+  margin-right: 30px;
+  display: none;
+  height: 1.2em;
+  border-radius: 3px;
+  transition: 0.2s;
+  border: none;
+  background-color: rgb(197, 197, 197);
+  color: white;
+  font-size: 1.5em;
+}
+
+.btn3 {
+  /* position: absolute; */
+  z-index: 1001;
+  margin-top: 10px;
+  width: 20px;
+  margin-left: 30px;
+  display: none;
+  height: 1.2em;
+  border-radius: 3px;
+  transition: 0.2s;
+  border: none;
+  background-color: rgb(197, 197, 197);
+  color: white;
+  font-size: 1.5em;
+}
+
+.btn1:hover {
+  background-color: rgb(231, 229, 123);
+  color: #535353;
+}
+
+.btn2:hover,
+.btn3:hover {
+  background-color: rgb(231, 229, 123);
+  color: #535353;
+}
+
+#matrixBtn {
+  display: none;
+  position: absolute;
+  width: 25vw;
+  margin-bottom: 5vh;
+  z-index: 1000;
+}
+
+#check {
+  position: absolute;
+  z-index: 1002;
+  left: 100px;
+  top: 100px;
+}
