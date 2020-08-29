@@ -3,6 +3,7 @@
 # This is a matrix of random numbers
 
 # Play with it.
+https://denisknk.github.io/funmatrix/
 
 -Click on any point to `change` it's value +1.
 -Hover on any point.
